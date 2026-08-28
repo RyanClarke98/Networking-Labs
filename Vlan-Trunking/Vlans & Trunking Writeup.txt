@@ -16,6 +16,7 @@ VLAN 20 — SERVERS
 Network: 192.168.20.0/24
 PC3: 192.168.20.10
 PC4: 192.168.20.11
+
 Configuration
 Created VLAN 10 and VLAN 20 on both switches.
 Configured PC-facing interfaces as access ports.
