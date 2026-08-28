@@ -1,0 +1,15 @@
+Lab 3 — Static Routing
+
+Configured a two-router network using static routes to provide connectivity between two separate LANs.
+
+LAN 1: 192.168.10.0/24
+LAN 2: 192.168.20.0/24
+R1 ↔ R2: 10.0.0.0/30
+
+Configuration:
+
+Configured router interfaces and default gateways
+Added static routes on R1 and R2
+Verified routing tables and end-to-end connectivity
+
+Result: PC1 successfully pinged PC2 across both routers.
