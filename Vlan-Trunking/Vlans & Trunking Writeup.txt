@@ -1,0 +1,34 @@
+Lab 1 — VLANs & 802.1Q Trunking
+Objective
+
+Build a small Layer 2 network using two Cisco switches. Configure VLAN segmentation, assign end devices to access ports, and establish an 802.1Q trunk between the switches.
+
+Network Design
+
+VLAN 10 — USERS
+
+Network: 192.168.10.0/24
+PC1: 192.168.10.10
+PC2: 192.168.10.11
+
+VLAN 20 — SERVERS
+
+Network: 192.168.20.0/24
+PC3: 192.168.20.10
+PC4: 192.168.20.11
+Configuration
+Created VLAN 10 and VLAN 20 on both switches.
+Configured PC-facing interfaces as access ports.
+Assigned PC1/PC2 to VLAN 10.
+Assigned PC3/PC4 to VLAN 20.
+Configured the SW1–SW2 connection as an 802.1Q trunk.
+Allowed VLANs 10 and 20 across the trunk.
+Verification
+PC1 → PC2: Successful
+PC3 → PC4: Successful
+PC1 → PC3: Unsuccessful by design
+Key Learning
+
+VLANs create separate Layer 2 broadcast domains. An 802.1Q trunk allows multiple VLANs to traverse a single link between switches, but it does not provide communication between different VLANs.
+
+Inter-VLAN communication requires a Layer 3 device, which will be introduced in the next lab using Router-on-a-Stick.
