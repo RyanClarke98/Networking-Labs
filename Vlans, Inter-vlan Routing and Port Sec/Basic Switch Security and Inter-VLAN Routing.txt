@@ -1,5 +1,5 @@
 Objective:Configure basic device hardening, VLAN segmentation, trunking, port security, and inter-VLAN routing using Router-on-a-Stick (ROAS).
-Configuration:Hostnames: R1, SW1, and SW2 configured according to the topology.
+Configuration:Hostnames: R1, SW1, and SW2 
 Device Hardening: Privileged EXEC mode secured with an enable secret of CCNA on all devices.
 
 VLAN Assignments:VLAN 13: Host ports for PC1 and PC3 configured as access links.
@@ -11,5 +11,6 @@ Port Security: Enabled on all PC-facing access ports with sticky MAC address lea
 Inter-VLAN Routing (ROAS): 
 Subinterface .13 → VLAN 13 → 10.0.0.1Subinterface .24 → VLAN 24 → 10.0.1.1
 
-Result:Successful end-to-end ICMP communication between all PCs, confirming functional routing across different VLANs.Key 
+Result:Successful end-to-end ICMP communication between all PCs, confirming functional routing across different VLANs.
+
 Learning:Combining Router-on-a-Stick (ROAS) for inter-VLAN communication with Layer 2 Port Security (Restrict mode) allows for a network design that is both highly segmented and resilient against unauthorized physical hardware intrusions without causing accidental network outages.
